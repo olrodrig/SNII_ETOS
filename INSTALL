@@ -1,0 +1,6 @@
+The SNII_ETOS code does not require installation, but it has dependencies that must be satisfied.
+
+- Python 3 (in Ubuntu: apt install python3)
+- numpy 1.15.0 or newer (e.g., pip3 install numpy)
+- sklearn 0.18.1 or newer (e.g., pip3 install scikit-learn) 
+- matplotlib 2.2.4 or newer (e.g., pip3 install matplotlib) 

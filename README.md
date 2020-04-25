@@ -1,0 +1,9 @@
+# SN II explosion time from optical spectra
+
+The explosion time t_0 of an SN can be estimated by means of photometric information; it can be constrained between the last non-detection and the first detection, or estimated through a polynomial fit to the rise-time photometry when it is available. The spectroscopy of an SN can also provide information about its explosion epoch by means of the comparison with other spectra of SNe with explosion epoch estimated through photometric information.
+
+In [Rodríguez et al. (2019)](https://ui.adsabs.harvard.edu/abs/2019MNRAS.483.5459R/abstract) I developed an automated routine to compute the probability density function (pdf) of t_0 given a set of input optical spectra, called **SNII Explosion Time from Optical Spectra (SNII_ETOS)**. This routine makes use of the Supernova Identificator code (SNID; [Blondin & Tonry 2007](https://ui.adsabs.harvard.edu/abs/2007ApJ...666.1024B/abstract)), which finds by cross-correlation the spectra from a certain template library that are more similar to the input spectrum. In [Rodríguez et al. (2019)](https://ui.adsabs.harvard.edu/abs/2019MNRAS.483.5459R/abstract) I also compiled a template library using optical spectra of 59 SNe II with t_0 constrained within 10 days by photometric information (details of the template library are available [here](https://github.com/olrodrig/SNII_ETOS/tree/master/docs/R19_tableF6.pdf)). These spectra are at epochs earlier than 40 days since explosion and have information in the range between 4100 and 7000 angstrom. Therefore, to compute t_0 with the **SNII_ETOS** code it is necessary that the input spectra: (1) be defined between 4100 and 7000 angstrom, and (2) be as early as possible (at least 40 days earlier than the first detection).
+
+For any question, email me at olrodrig@gmail.com
+
+**If you use the SNII_ETOS code in your work, please cite [Rodríguez et al. (2019)](https://ui.adsabs.harvard.edu/abs/2019MNRAS.483.5459R/abstract).**

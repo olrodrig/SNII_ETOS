@@ -1,0 +1,1 @@
+To run the SNII_ETOS tutorial, you need to install jupyter (pip3 install jupyterlab). Then, in the 'tutorial' folder, open a terminal and run: jupyter notebook SNII_ETOS_tutorial.ipynb
